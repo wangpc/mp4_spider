@@ -7,7 +7,7 @@ require 'uri'
 
 def send text, desp, type = :get
 
-	key = "SCU3055Tc23bcc31b45f63dac88a754c245b3ec457fcaff2be426"
+	key = ""
 
 	if (text.length > 256) or (desp.length > (1024 * 64))
 		raise "error: text length should less than 256 or desp should less than 64k. "
