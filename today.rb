@@ -7,7 +7,7 @@ require 'uri'
 
 def send text, desp, type = :get
 
-	key = ""
+	key = File.read('./key_file').strip
 
 	if (text.length > 256) or (desp.length > (1024 * 64))
 		raise "error: text length should less than 256 or desp should less than 64k. "
